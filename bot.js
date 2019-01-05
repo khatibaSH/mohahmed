@@ -128,11 +128,11 @@ client.on('message', message => {
     client.user.setGame(argresult, "https://www.twitch.tv/One");
       message.channel.send(`BY !RG , ZEUS#9999`)
   }
-  if (message.content.startsWith(adminprefix + 'setname')) {
+  if (message.content.startsWith(adminprefix + 'setName')) {
   client.user.setUsername(argresult).then
       message.channel.send(`Changing The Name To ..**${argresult}** `)
 } else
-if (message.content.startsWith(adminprefix + 'setavatar')) {
+if (message.content.startsWith(adminprefix + 'setAvatar')) {
   client.user.setAvatar(argresult);
     message.channel.send(`Changing The Avatar To :**${argresult}** `);
 }
